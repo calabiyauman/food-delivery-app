@@ -91,7 +91,7 @@ const Card = () => {
           <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 30 }}>
             <View style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
               <TouchableOpacity
-                onPress={() => (orderQuantity > 1 ? setOrderQuantity(orderQuantity - 1) : Alert.alert("Warning", "Quantity cannot be less than one."))}
+                onPress={() => (orderQuantity > 1 ? setOrderQuantity(orderQuantity - 1) : console.log("Warning", "Quantity cannot be less than one."))}
                 style={styles.quantityTouchableOpacity}
               >
                 <Text style={{ fontSize: 18, color: "#B1DB5A", fontFamily: "DMSans_700Bold" }}>-</Text>

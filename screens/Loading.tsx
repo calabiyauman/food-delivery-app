@@ -11,7 +11,7 @@ const getImageDimension = (optimalSize: number) => {
 };
 
 const Loading = () => {
-  let [fontsLoaded] = useFonts({
+  let [fontsLoaded] =  useFonts({
     ArimaMadurai_700Bold,
     DMSans_700Bold,
     DMSans_500Medium,
@@ -24,13 +24,9 @@ const Loading = () => {
     return (
       <View style={styles.container}>
         <StatusBar style="auto" hidden={true} />
-        <ImageBackground source={require("../assets/photos/background.jpg")} style={styles.imageBackground} />
+        
         <View style={styles.circleView}>
-          <Image source={require("../assets/icons/logo.png")} />
-          <View style={styles.logoTextContainer}>
-            <Text style={styles.healthyText}>Healthy</Text>
-            <Text style={styles.foodText}>Food</Text>
-          </View>
+          <Image source={require("../assets/icons/snackfleet-logobrighter.png")} style={styles.container}/>
         </View>
       </View>
     );
@@ -40,9 +36,9 @@ const Loading = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#ffe108",
   },
   imageBackground: {
     position: "absolute",
@@ -53,12 +49,10 @@ const styles = StyleSheet.create({
   circleView: {
     width: getImageDimension(200),
     height: getImageDimension(200),
-    backgroundColor: "#000",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 999,
-    opacity: 0.85,
+    
   },
   logoTextContainer: {
     display: "flex",
