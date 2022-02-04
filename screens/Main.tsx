@@ -18,6 +18,10 @@ import ClockSVG from "../components/svgs/Clock";
 import StarSVG from "../components/svgs/Star";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
+//import Menurequest from "../requests/loadstores";
+
+
+//let menuload = Menurequest 
 
 interface CategoryItem {
   category: string;
@@ -124,7 +128,7 @@ const Main = () => {
     return (
       <TouchableOpacity
         onPress={() => setActiveCategoryIndex(index)}
-        style={{ backgroundColor: index === activeCategoryIndex ? "#B1DB5A" : "#2C2C2C", ...renderCategoryItemStyles.touchableOpacity }}
+        style={{ backgroundColor: index === activeCategoryIndex ? "#ffe108" : "#2C2C2C", ...renderCategoryItemStyles.touchableOpacity }}
       >
         <View style={{ borderColor: index === activeCategoryIndex ? "#2C2C2C" : "#fff", ...renderCategoryItemStyles.view }}>{item.icon}</View>
         <Text style={{ fontFamily: "DMSans_500Medium", color: index === activeCategoryIndex ? "#2C2C2C" : "#fff" }}>{item.category}</Text>
@@ -151,7 +155,7 @@ const Main = () => {
           <Text style={{ color: "#fff", fontSize: 18, fontFamily: "DMSans_700Bold" }}>{item.title}</Text>
           <Text style={{ color: "#BCBCBC", fontSize: 14, fontFamily: "DMSans_400Regular", marginTop: 5 }}>{item.description}</Text>
           <View style={{ display: "flex", flexDirection: "row", alignItems: "center", marginTop: 5 }}>
-            <View style={{ backgroundColor: "#B1DB5A", paddingHorizontal: 12, paddingVertical: 3, borderRadius: 15 }}>
+            <View style={{ backgroundColor: "#ffe108", paddingHorizontal: 12, paddingVertical: 3, borderRadius: 15 }}>
               <Text style={{ fontFamily: "DMSans_700Bold", fontSize: 17, color: "#202020" }}>${item.price}</Text>
             </View>
             <View style={{ display: "flex", flexDirection: "row", alignItems: "center", marginLeft: 15 }}>
@@ -185,8 +189,8 @@ const Main = () => {
 
         {/* Header Text */}
         <View style={{ marginTop: 10, paddingHorizontal: 30 }}>
-          <Text style={{ fontSize: 28, color: "#fff", fontFamily: "DMSans_700Bold" }}>Let's Eat</Text>
-          <Text style={{ fontSize: 28, color: "#fff", fontFamily: "DMSans_700Bold" }}>Healthy Food</Text>
+          <Text style={{ fontSize: 28, color: "#fff", fontFamily: "DMSans_700Bold" }}>Local Food</Text>
+          <Text style={{ fontSize: 28, color: "#fff", fontFamily: "DMSans_700Bold" }}>Delivered Fast</Text>
         </View>
 
         {/* Category Carousel */}
