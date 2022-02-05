@@ -1,6 +1,6 @@
 
 
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useReducer} from "react";
 import axios from "axios"
 import
 
@@ -9,8 +9,8 @@ import {APIURL, GET_STORE_LIST_NEAREST_CITY} from "./user_http_methods"
 
 function StoreData() {
     const [data, setData] = useState(
-        {StoreList: "value", {
-            Store1: "value", {
+        {StoreList: "", {
+            Store1: "", {
 
             },
             Store2: 

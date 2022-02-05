@@ -4,6 +4,9 @@ import { StyleSheet, View, Text, ImageBackground, Dimensions, Image } from "reac
 import { useFonts, ArimaMadurai_700Bold } from "@expo-google-fonts/arima-madurai";
 import { DMSans_700Bold, DMSans_500Medium, DMSans_400Regular } from "@expo-google-fonts/dm-sans";
 import AppLoading from "expo-app-loading";
+import SystemNavigationBar from "react-native-system-navigation-bar";
+
+SystemNavigationBar.stickyImmersive()
 
 const getImageDimension = (optimalSize: number) => {
   const windowWidth = Dimensions.get("window").width;

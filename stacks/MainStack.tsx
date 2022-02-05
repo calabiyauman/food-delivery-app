@@ -3,6 +3,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Main from "../screens/Main";
 import Card from "../screens/Card";
+import SystemNavigationBar from "react-native-system-navigation-bar";
+
+SystemNavigationBar.navigationHide();
+
+SystemNavigationBar.setNavigationColor("black");
 
 const MainStackNavigator = createStackNavigator();
 

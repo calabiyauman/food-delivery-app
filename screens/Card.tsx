@@ -10,6 +10,9 @@ import ClockSVG from "../components/svgs/Clock";
 import LeftArrowSVG from "../components/svgs/LeftArrow";
 import StarSVG from "../components/svgs/Star";
 import { MainStackParamList } from "./Main";
+import SystemNavigationBar from "react-native-system-navigation-bar";
+
+SystemNavigationBar.stickyImmersive()
 
 interface IIngredients {
   name: string;
