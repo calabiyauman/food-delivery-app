@@ -18,6 +18,7 @@ import ClockSVG from "../components/svgs/Clock";
 import StarSVG from "../components/svgs/Star";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
+
 //import Menurequest from "../requests/loadstores";
 
 
