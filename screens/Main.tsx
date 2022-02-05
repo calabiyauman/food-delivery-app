@@ -113,6 +113,7 @@ let dishes: DishesItem[] = [
 export type MainStackParamList = {
   Main: undefined;
   Card: { item: DishesItem };
+  Login: undefined;
 };
 
 const Main = () => {
@@ -182,7 +183,7 @@ const Main = () => {
             <TouchableOpacity>
               <NotificationsSVG size={30} fill={"#fff"} />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>navigation.navigate("Login")}>
               <Image source={require("../assets/photos/avatar.png")} style={{ marginLeft: 15 }} />
             </TouchableOpacity>
           </View>
